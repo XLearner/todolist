@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>ToDo List</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+
+	<div class="body">
+		<div class="header">
+			<form action="javascript:add()">
+				<span>ToDoList</span>
+				<input type="text" placeholder="输入需要记录的事件" id="shuru">
+			</form>
+		</div>
+		<div class="article">
+			<div class="list" id="do">
+				<!-- 未完成事件	 -->
+				<h3>正在进行<span class="num" id="do-list">0</span></h3>
+				<ul id="doshow">
+					
+				</ul>
+			</div>
+			<div class="list" id="done">
+				<!-- 已完成事件 -->
+				<h3>已经完成<span class="num"  id="done-list">0</span></h3>
+				<ul id="doneshow">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>To Do List, finished in 2017.07.17</p><a href="javascript:localStorage.clear();">clear</a>
+	</div>
+</body>
+</html>
